@@ -40,7 +40,7 @@ h2 {
 .header {
     grid-area: header;
 
-    background: #d2ecf0;
+    background: #f3f3f3;
 }
 
 .main {
@@ -59,7 +59,7 @@ h2 {
 
     padding-bottom: 8px;
     margin-bottom: 8px;    
-    border-bottom: 4px solid black;    
+    border-bottom: 4px solid lightcoral;    
 }
 
 .main .about-me-wrapper .about-me {
@@ -74,7 +74,7 @@ h2 {
     display: inline-block;
     padding-bottom: 8px;
     margin-bottom: 8px;
-    border-bottom: 4px solid black;    
+    border-bottom: 4px solid lightcoral;    
 }
 
 .my-projects-wrapper .my-projects {
@@ -103,13 +103,13 @@ h2 {
 }
 
 .my-projects-wrapper .my-projects .project-wrapper:hover {
-    background: #f3f3f3;
+    background: #d2ecf0;
 }
 
 .my-projects-wrapper .my-projects .project-wrapper .project-title-logo-wrapper {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #f3f3f3;
+    border-bottom: 2px solid lightseagreen;
     margin-bottom: 8px;
     padding-bottom: 8px;
 }
