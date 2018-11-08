@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"; 
+        
+    grid-gap: 10px;
+
+    height: 100vh;
+}
+
+header, main, footer {
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #59463b;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+
+.header {
+    grid-area: header;
+
+    background: #d2ecf0;
+}
+
+.main {
+    grid-area: main;
+
+    flex-direction: column;
+    align-items: flex-start;     
+}
+
+.main .about-me-wrapper {    
+    margin-bottom: 24px;
+} 
+
+.main .about-me-wrapper .about-me-title {
+    display: inline-block;
+
+    padding-bottom: 8px;
+    margin-bottom: 8px;    
+    border-bottom: 4px solid black;    
+}
+
+.main .about-me-wrapper .about-me {
+    text-align: justify;
+}
+
+.my-projects-wrapper {  
+    width: 100%;  
+}
+
+.my-projects-wrapper .my-projects-title {
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 4px solid black;    
+}
+
+.my-projects-wrapper .my-projects {
+    display: grid;
+    grid-template-areas:
+        "capitals-app"
+        "burberry-site"
+        "ebooks-notifier"
+        "video-reviews"; 
+    
+    grid-gap: 8px;
+}
+
+.my-projects-wrapper .my-projects .project-wrapper {
+    border: 1px solid black;
+    border-radius: 4px;
+
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.my-projects-wrapper .my-projects .project-wrapper:hover {
+    background: #f3f3f3;
+}
+
+.my-projects-wrapper .my-projects .project-wrapper .project-title-logo-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #f3f3f3;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.my-projects-wrapper .my-projects .project-wrapper .project-logo {
+    width: auto;
+    height: 32px;
+    margin-left: auto;
+}
+
+.my-projects-wrapper .my-projects .project-wrapper .project-summary-wrapper {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.my-projects-wrapper .my-projects .project-wrapper .project-summary-wrapper .project-summary {
+    text-align: justify;
+}
+
+.my-projects-wrapper .my-projects .capitals-app {
+    grid-area: capitals-app;
+}
+
+.my-projects-wrapper .my-projects .burberry-site {
+    grid-area: burberry-site;
+}
+
+.my-projects-wrapper .my-projects .ebooks-notifier {
+    grid-area: ebooks-notifier;
+}
+
+.my-projects-wrapper .my-projects .video-reviews {
+    grid-area: video-reviews;
+}
+
+.footer {
+    grid-area: footer;
+
+    flex-direction: column;
+    align-items: center; 
+
+    background-color: #f3f3f3;
+} 
+
+.footer-title {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 24px;
+    text-align: center;
+    max-width: 382px;
+}
+
+.footer-nav .nav-link {
+}
+
+.footer-nav .nav-link > img {
+    width: 32px;
+    height: auto;
+}
+
+@media screen and (min-width: 576px) {
+    body {
+        grid-template-areas:
+            "header header header"
+            ". main ."
+            "footer footer footer"; 
+            
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 535px 1fr;
+    }
+
+    .my-projects-wrapper .my-projects {
+        grid-gap: 24px;
+    }    
+
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .footer-nav .nav-link > img {
+        width: 48px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .footer-title {
+        max-width: 100%;
+        font-size: 22px;
+    }
+
+    .footer-nav .nav-link > img {
+        width: 64px;
+    }
+}
+
+@keyframes go-up {   
+    from {
+      top: 50px;  
+      opacity: 1;   
+      height: auto;           
+    }
+    to {
+      top: 0px; 
+      opacity: 0;
+      height: 0px;
+    }
+}
+
+@keyframes go-down {
+    from {
+        top: 0px;  
+        opacity: 0;  
+        height: 0px;    
+    }
+
+    to {
+        top: 50px;
+        opacity: 1;  
+        height: auto;    
+    }
+}
