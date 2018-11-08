@@ -162,7 +162,8 @@ h2 {
     max-width: 382px;
 }
 
-.footer-nav .nav-link {
+.footer-nav .nav-link:not(:last-child) {
+    margin-right: 8px;
 }
 
 .footer-nav .nav-link > img {
