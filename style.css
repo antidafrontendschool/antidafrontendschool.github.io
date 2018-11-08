@@ -167,7 +167,7 @@ h2 {
 }
 
 .footer-nav .nav-link > img {
-    width: 32px;
+    width: 48px;
     height: auto;
 }
 
@@ -193,16 +193,13 @@ h2 {
     .footer-nav .nav-link:not(:last-child) {
         margin-right: 24px;
     }
-
-    .footer-nav .nav-link > img {
-        width: 48px;
-    }
 }
 
 @media screen and (min-width: 992px) {
     .footer-title {
         max-width: 100%;
         font-size: 22px;
+        margin-bottom: 36px;
     }
 
     .footer-nav .nav-link:not(:last-child) {
