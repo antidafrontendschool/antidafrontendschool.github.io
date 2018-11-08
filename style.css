@@ -163,7 +163,7 @@ h2 {
 }
 
 .footer-nav .nav-link:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 16px;
 }
 
 .footer-nav .nav-link > img {
@@ -190,6 +190,10 @@ h2 {
         font-size: 20px;
     }
 
+    .footer-nav .nav-link:not(:last-child) {
+        margin-right: 24px;
+    }
+
     .footer-nav .nav-link > img {
         width: 48px;
     }
@@ -199,6 +203,10 @@ h2 {
     .footer-title {
         max-width: 100%;
         font-size: 22px;
+    }
+
+    .footer-nav .nav-link:not(:last-child) {
+        margin-right: 32px;
     }
 
     .footer-nav .nav-link > img {
