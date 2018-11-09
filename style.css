@@ -163,6 +163,25 @@ h2 {
     margin-bottom: 8px;    
 }
 
+.my-projects-wrapper .my-projects .project-wrapper .project-summary-wrapper .project-summary a {
+    text-decoration: none;
+    /* color: white; */
+    padding-bottom: 2px;
+    /* border: 1px solid black; */
+    /* border-radius: 4px; */
+    /* width: 150px; */
+    /* display: block; */
+    /* text-align: center; */
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    /* background: lightpink; */
+    font-family: 'Montserrat';
+    font-weight: 400;
+    /* font-size: 16px; */
+    border-bottom: 1px solid;
+    color: burlywood;    
+}
+
 .my-projects-wrapper .my-projects .project-wrapper .project-summary-wrapper .project-link {
     text-decoration: none;
     color: white;
@@ -179,10 +198,6 @@ h2 {
     font-weight: 500;
     font-size: 16px;
 }
-
-a:visited { color: #f0f; }
-a:hover { color: #0f0; }
-a:active { color: #f00; }
 
 .my-projects-wrapper .my-projects .capitals-app {
     grid-area: capitals-app;
