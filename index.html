@@ -56,7 +56,7 @@
                             it?
                             Or maybe you just want to expand your horizons?
                             This app is perfect tool for it.
-                            It's very simple - go to site, choose continent and click 'Start' - you're in the game :)
+                            It's very simple - go to site, choose continent and click 'Start' - you're in the game &#x1F61C;
                             After clicking on 'Start' the program randomly selects a country for you from the choosed
                             continent and
                             all you have to do is to write the capital of this country.
@@ -79,8 +79,8 @@
 
                     <div class="project-summary-wrapper" data-close="true">
                         <p class="project-summary">
-                            This app I did on the <a href="http://t.me/evgenyrodionov">@evgenyrodionov</a> course on
-                            React.js in August 2017.
+                            This app I did on the <a target="_blank" href="http://t.me/evgenyrodionov">@evgenyrodionov</a> course on
+                            React.js in August 2017. This my first app on React.js!
                         </p>
 
                         <a class="project-link" href="https://build-btzecostxu.now.sh/men" target="_blank">Check this
@@ -96,10 +96,13 @@
 
                     <div class="project-summary-wrapper" data-close="true">
                         <p class="project-summary">
-                            On weekends I enjoy spending time with my boyfriend, Vince, and my quadruped nephew, Pedro.
-                            I also organize monthly events on behalf of the BMCAA.
-                            Sometimes I tweet, write, code pens, paint, and speak.
-                            I live in Toronto, Canada, home of Drake.
+                            Do you like to read development literature and always want to receive current information?
+                            So, you should go to <a target="_blank" href="https://packtpub.com">packtpub.com</a> - this platform contents 100+ books on different themes: web, software, devops, etc.
+                            Despite that fact that most of thee books on the site are paid, site distributes one random book for free every day.
+                            But once I thought - why do I need to visit this site every dat for checking today's free book, if I can do program, which will get info of this book and send it to me and after it
+                            I will solve - does it worth to visit site for download this book?
+                            This app is a bot in Telegram, which get info about today's free book and send it to me in Telegram. <br>
+                            I like it! &#x1F607;	
                         </p>
 
                         <a class="project-link" href="https://t.me/codingBooksBot" target="_blank">Check this out!</a>
@@ -142,7 +145,7 @@
     </footer>
     <script>
         $(document).on('mousedown', '.project-wrapper', function (e) {
-            if (!$(e.target).hasClass('project-link')) {
+            if (!$(e.target).is('a')) {
                 if ($(e.currentTarget).find('.project-summary-wrapper').attr('data-close') == 'true') {
                     $(e.currentTarget).find('.project-summary-wrapper').attr('data-close', 'false');
 
