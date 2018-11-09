@@ -71,6 +71,7 @@ h2 {
     border-left: 2px solid black;
     padding-left: 8px;
     margin-bottom: 8px;
+    background: antiquewhite;
 }
 
 .main .about-me-wrapper .about-me span:last-child {
