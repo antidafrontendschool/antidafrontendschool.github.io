@@ -82,14 +82,16 @@ h2 {
 
 .main .about-me-wrapper .about-me .skills-logos {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: 16px;
 }
 
 .main .about-me-wrapper .about-me .skills-logos .skill-logo {
-    width: 32px; 
+    width: 48px; 
     height: auto;
     margin-right: 16px;
+    margin-bottom: 8px;
 }
 
 .main .about-me-wrapper .about-me .skills-logos .skill-logo:last-child {
@@ -269,7 +271,7 @@ h2 {
     }
 
     .main .about-me-wrapper .about-me .skills-logos .skill-logo {
-        width: 48px; 
+        margin-bottom: 0px; 
     }
 
     .my-projects-wrapper .my-projects {
