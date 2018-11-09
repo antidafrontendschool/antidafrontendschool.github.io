@@ -66,6 +66,20 @@ h2 {
     text-align: justify;
 }
 
+.main .about-me-wrapper .about-me a {
+    text-decoration: none;
+    padding-bottom: 1px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    border-bottom: 1px solid;
+    color: burlywood
+}
+
+.main .about-me-wrapper .about-me a:hover {
+    color: lightcoral
+}
+
 .main .about-me-wrapper .about-me .skills-logos {
     display: flex;
     align-items: center;
@@ -181,6 +195,10 @@ h2 {
     color: burlywood;    
 }
 
+.my-projects-wrapper .my-projects .project-wrapper .project-summary-wrapper .project-summary a:hover {
+    color: lightcoral
+}
+
 .my-projects-wrapper .my-projects .project-wrapper .project-summary-wrapper .project-link {
     text-decoration: none;
     color: white;
@@ -251,7 +269,7 @@ h2 {
     }
 
     .main .about-me-wrapper .about-me .skills-logos .skill-logo {
-        width: 64px; 
+        width: 48px; 
     }
 
     .my-projects-wrapper .my-projects {
@@ -270,6 +288,10 @@ h2 {
 @media screen and (min-width: 992px) {
     body {
         grid-template-columns: 1fr 750px 1fr;
+    }
+
+    .main .about-me-wrapper .about-me .skills-logos .skill-logo {
+        width: 64px; 
     }
 
     .footer-title {
