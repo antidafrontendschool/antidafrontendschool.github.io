@@ -114,6 +114,12 @@ h2 {
     padding-bottom: 8px;
 }
 
+.my-projects-wrapper .my-projects .project-wrapper .project-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
 .my-projects-wrapper .my-projects .project-wrapper .project-logo {
     width: auto;
     height: 32px;
@@ -126,9 +132,36 @@ h2 {
     opacity: 0;
 }
 
+.my-projects-wrapper .my-projects .project-wrapper .project-summary-wrapper .project-summary-title {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
 .my-projects-wrapper .my-projects .project-wrapper .project-summary-wrapper .project-summary {
     text-align: justify;
+    margin-bottom: 8px;    
 }
+
+.my-projects-wrapper .my-projects .project-wrapper .project-summary-wrapper .project-link {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: lightpink;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+a:visited { color: #f0f; }
+a:hover { color: #0f0; }
+a:active { color: #f00; }
 
 .my-projects-wrapper .my-projects .capitals-app {
     grid-area: capitals-app;

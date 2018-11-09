@@ -41,11 +41,18 @@
                     </div>
                     
                     <div class="project-summary-wrapper" data-close="true">
+                        <h3 class="project-summary-title">Summary</h3>
                         <p class="project-summary">
-                            On weekends I enjoy spending time with my boyfriend, Vince, and my quadruped nephew, Pedro. 
-                            I also organize monthly events on behalf of the BMCAA. 
-                            Sometimes I tweet, write, code pens, paint, and speak. 
-                            I live in Toronto, Canada, home of Drake.
+                            Soon the school test of knowledge of the capitals of the world and you want to prepare for it? 
+                            Or maybe you just want to expand your horizons?
+                            This app is perfect tool for it. 
+                            It's very simple - go to site, choose continent and click 'Start' - you're in the game :)
+                            After clicking on 'Start' the program randomly selects a country for you from the choosed continent and 
+                            all you have to do is to write the capital of this country. 
+                            But the main feature of this app is visual part. 
+                            The program not only select a country randomly, but also moves the map so that capital of the country is directly
+                            in front of your eyes. <br>
+                            Sounds cool, doesn't it?
                         </p>                       
 
                         <a class="project-link" href="https://inikonorov.github.io/" target="_blank">Check this out!<a>
@@ -118,19 +125,21 @@
     </footer>
     <script>
         $(document).on('mousedown', '.project-wrapper', function(e) {
-            if ($(e.currentTarget).find('.project-summary-wrapper').attr('data-close') == 'true') {
-                $(e.currentTarget).find('.project-summary-wrapper').attr('data-close', 'false');
+            if (!$(e.target).hasClass('project-link')) {
+                if ($(e.currentTarget).find('.project-summary-wrapper').attr('data-close') == 'true') {
+                    $(e.currentTarget).find('.project-summary-wrapper').attr('data-close', 'false');
                 
-                $(e.currentTarget).find('.project-summary-wrapper').css({                    
-                    'animation': 'go-down 0.5s forwards'
-                });            
-            } else {
-                $(e.currentTarget).find('.project-summary-wrapper').attr('data-close', 'true');
+                    $(e.currentTarget).find('.project-summary-wrapper').css({                    
+                        'animation': 'go-down 0.5s forwards'
+                    });            
+                } else {
+                    $(e.currentTarget).find('.project-summary-wrapper').attr('data-close', 'true');
 
-                $(e.currentTarget).find('.project-summary-wrapper').css({
-                    'animation': 'go-up 0.5s forwards'
-                });
-            }
+                    $(e.currentTarget).find('.project-summary-wrapper').css({
+                        'animation': 'go-up 0.5s forwards'
+                    });
+                }
+            }            
         });
     </script>
 </body>
