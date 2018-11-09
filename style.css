@@ -66,6 +66,26 @@ h2 {
     text-align: justify;
 }
 
+.main .about-me-wrapper .about-me span {
+    display: inline-block;
+    border-left: 2px solid black;
+    padding-left: 8px;
+    margin-bottom: 8px;
+}
+
+.main .about-me-wrapper .about-me span:last-child {
+    margin-bottom: 0px;
+}
+
+.main .about-me-wrapper .about-me p {
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
+.main .about-me-wrapper .about-me p:last-child {
+    margin-bottom: 0px;
+}
+
 .my-projects-wrapper {  
     width: 100%;  
 }
